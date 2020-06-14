@@ -1,5 +1,5 @@
 import React from 'react';
-// import s from './MyPosts.module.css'
+import s from './MyPosts.module.css'
 import Post from './Post/Post';
 
 
@@ -7,16 +7,20 @@ import Post from './Post/Post';
 
 const MyPosts = () => {
   return(
-    <div>
-      MyPosts
+    <div className={s.postsBlock}>
+      <h3>MyPosts</h3>
       <div>
-        <textarea></textarea>
-        <button>Add Post</button>
-       
+        <div>
+           <textarea></textarea>
+        </div>
+        <div>
+            <button>Add Post</button>
+        </div> 
       </div>
-      <Post message="Hi, how are you?" likes="15"/>
-      <Post message="This is my first post" likes="20"/>
-
+      <div className={s.posts}>
+            <Post message="Hi, how are you?" likes="15"/>
+            <Post message="This is my first post" likes="20"/>
+      </div>
     </div>
   )
 }
