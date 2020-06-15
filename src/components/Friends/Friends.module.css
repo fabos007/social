@@ -1,0 +1,9 @@
+.friendsWrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.friendsWrapper img {
+  widows: 20px; 
+  height: 20px;
+}
