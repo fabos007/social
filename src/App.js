@@ -13,6 +13,7 @@ import Friends from './components/Friends/Friends';
 
 
 const App = (props) => {
+	
   return (
 		<BrowserRouter>
 			<div className="app-wrapper">
@@ -22,7 +23,7 @@ const App = (props) => {
 					{/* <Route path="/profile" component={Profile} />
 					<Route path="/dialogs" component={Dialogs} /> */}
 					<Route path="/profile" render={() => <Profile state={props.state.profilePage} addPost ={props.addPost} />} />
-					<Route path="/dialogs" render={() => <Dialogs state={props.state.dialogsPage} />} />
+					<Route path="/dialogs" render={() => <Dialogs state={props.state.dialogsPage} addMessage={props.addMessage}  />} />
                     <Route path="/news" component={News} />
                     <Route path="/music" component={Music} />
                     <Route path="/setting" component={Settings} />
